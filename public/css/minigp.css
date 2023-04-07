@@ -1,0 +1,828 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    }
+    
+    body{
+        overflow-x: hidden;
+    }
+    
+@font-face {
+    font-family: "新丸ゴ DB";
+    src: url("/fonts/A-OTF-ShinMGoPro-DeBold.woff")
+    }
+    
+
+@font-face {
+   font-family: "新丸ゴH";
+    src: url("/fonts/A-OTF\ Shin\ Maru\ Go\ Pro\ H.otf")
+    }
+
+@font-face {
+    font-family: "新丸ゴ U";
+    src: url("/fonts/A-OTF\ Shin\ Maru\ Go\ Pro\ U.otf")
+    }
+
+@font-face {
+        font-family: "新丸ゴ B";
+        src: url("/fonts/A-OTF-ShinMGoPro-Bold.otf")
+        }
+
+@font-face {
+       font-family: "新丸ゴ H";
+       src: url("/fonts/A-OTF-SHINMGOPRO-HEAVY.OTF")
+       }
+    
+
+ @font-face{
+    font-family: "MyriadPro Regular";
+    src: url("/fonts/MYRIADPRO-REGULAR.woff");
+ }       
+    /* Misc*/
+    Nav {
+        font-family: "新丸ゴ DB";
+        background-color: #00415c;
+        width: 100%;
+        height: auto;
+        text-decoration: none;
+    }
+
+    
+    .nav-link{
+        color : #fbf9f7;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 16px;
+        text-decoration: none;
+    
+        
+    }
+
+    
+    .nav-link:hover{
+        color : #ee7d00;
+    }
+
+a{
+    text-decoration: none;
+}
+    
+    .NavBtn {
+        background : #fff;
+        text-align: center;
+        text-decoration: none;
+        left : 10px;
+        top : 10px;
+        transition-duration: 0.4s;
+        border-radius : 50px;
+        font-family : "新丸ゴ DB";
+        color : #44413b;		
+        padding-left: 65px;
+        padding-right: 65px;
+        padding-top: 12px;
+        padding-bottom: 8px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .NavBtn:hover {
+        background : #ee7d00;
+        color : #fbf9f7;	
+        	
+    }
+
+    
+    .NavLogo {
+        height: 40px;
+        width: 40px;
+        border: solid #fff;
+        border-width: 2px;
+        border-radius: 45px;
+        transition-duration: 0.4s;
+    }
+    .NavLogo:hover{
+        height: 40px;
+        width: 40px;
+        transition-duration: 0.2s;
+        border: solid #ee7d00;
+        border-width: 4px;
+        border-radius: 45px;
+    
+    }
+
+    /* Hamburger Button Settings */
+    .navbar-toggler{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        transition: 0.5s ease-in-out;
+    }
+    .navbar-toggler,
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+        border: 0;
+    }
+    .navbar-toggler span{
+        margin: 0;
+        padding: 0;	
+    } 
+    
+    .toggler-icon{
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #fff;
+        border-radius: 2px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;	
+    }
+
+    /* Hamburger CLICKED State */
+    
+    .navbar-toggler .TopBar {
+        margin-top: 0px;
+        transform: rotate(135deg)
+            
+    }
+    .navbar-toggler .MiddleBar1, .MiddleBar2 {
+        opacity: 0%;
+        filter: alpha(opacity=0);
+    }
+    
+    .navbar-toggler .BottomBar {
+        margin-top: 0px;
+        transform: rotate(-135deg)
+    }
+    
+    /* Hamburger INACTIVE State */
+    .navbar-toggler.collapsed .TopBar{
+        margin-top: -12px;
+        transform: rotate(0deg);
+    }
+    
+    .navbar-toggler.collapsed .MiddleBar1{
+        margin-top: -4px;
+        opacity: 1;
+        filter: alpha(opacity=100)	
+    }
+    
+    .navbar-toggler.collapsed .MiddleBar2{
+        margin-top: 4px;
+        opacity: 1;
+        filter: alpha(opacity=100)	
+    }
+    .navbar-toggler.collapsed .BottomBar{
+        margin-top: 12px;
+        transform: rotate(0deg);
+    } 
+    
+    body {
+        font-family: kozuka-gothic-pr6n, arial, sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
+          font-size:  16px;
+      }
+    
+    .Horizontal-Center{
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .vertical-center {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    
+    .AnchorPoint {
+        transform: translate(-50%, -50%);
+    }
+    
+    /* SCALE CONTROLS*/
+    @media (max-width: 767px) {
+        .container {
+           padding-left: 10%;
+           padding-right: 10%;
+        }
+    }	
+
+.iconScale{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+    @media (max-width: 767px) {
+        .LargeDisplay {
+            display: none;
+        }
+    }	
+    
+    @media (min-width: 767px) {
+        .MobileDisplay {
+            display: none;
+        }
+    }	
+    
+    
+    .ResponsivePadding-TopBottom{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+    
+    @media (max-width: 767px) {
+        .ResponsivePadding-TopBottom{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        }
+    }
+    
+    .ResponsivePadding-Top{
+        padding-top: 4vw;
+
+    }
+    
+    @media (max-width: 767px) {
+        .ResponsivePadding-Top{
+        padding-top: 3vh;
+
+        }
+    }
+
+
+
+    .ResponsivePadding-Full{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+
+
+    @media (max-width: 767px) {
+        .ResponsivePadding-Full{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        padding-left: 3vh;
+        padding-right: 3vh;
+        }
+    }
+    
+    .FooterPadding{
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    
+    .ResponsiveMargin-TopBottom{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    
+    @media (max-width: 767px) {
+        .ResponsiveMargin-TopBottom{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        }
+    
+    }
+    
+    .ResponsiveMarginFull{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    
+    @media (max-width: 767px) {
+        .ResponsiveMarginFull{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        margin-left: 3vh;
+        margin-right: 3vh;
+        }
+    
+    }
+
+    /* Fonts*/
+
+    h1{
+        text-align: left;
+        font-family: "新丸ゴ U", arial, sans-serif;
+        font-size: 4.5vw;
+
+        font-weight: 900;
+    }
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 13vw;
+        }
+    }
+    
+
+    h2{
+        text-align: left;
+        font-family: "新丸ゴ U", arial, sans-serif;
+        font-size: 30px;
+        color: #44413b;
+        font-weight: 900;
+    }
+    @media (max-width: 767px) {
+        h2 {
+            font-size: 6vw;
+        }
+    }
+    h3{
+        text-align: left;
+        font-family: "新丸ゴ H", arial, sans-serif;
+        font-size: 30px;
+        color: #44413b;
+        font-weight: 900;
+    }
+    @media (max-width: 767px) {
+        h3 {
+            font-size: 6vw;
+        }
+    }
+
+h4{
+        
+	font-family:  kozuka-gothic-pro;
+	font-size: 1.7vw;
+    }
+ @media (max-width: 767px) {
+    h4 {
+        font-size:  5vw;
+    }
+}
+
+p{
+font-family: kozuka-gothic-pro, sans-serif;
+font-weight: 600;
+font-style:  normal;
+font-size: 16px;
+}
+@media (max-width: 1024px) {
+    p {
+        font-size:  16px;
+    }
+}
+
+
+
+
+@media (max-width: 426px) {
+    p {
+        font-size:  5vw
+    }
+}
+
+
+.p2{
+    font-family:  kozuka-gothic-pro;
+    font-size: 25px;
+    color: #1d1d1b;
+
+    text-align: left;
+}
+@media (max-width: 1050px) {
+    .p2 {
+        font-size:  1.6vw;
+    }
+}
+
+
+@media (max-width: 426px) {
+    .p2 {
+        font-size:  4vw;
+    }
+}
+    /* Custom Padding and Alignment*/
+
+.HeaderAlignment{
+   text-align: left;
+}
+
+@media (max-width: 767px) {
+    .HeaderAlignment {
+        text-align: center;
+    }
+}
+
+
+.CarouselButton{
+	width: 50px;
+}
+
+@media (max-width: 767px) {
+	.CarouselButton{
+		width: 25px;
+	}
+
+}
+
+.PaddingBand{
+    padding-top: 5%;
+}
+
+@media (max-width:767px){
+    .PaddingBand{
+        padding-top: 35px;
+    }
+
+}
+
+.PaddingBandHalf{
+    padding-top: 2%;
+}
+
+@media (max-width:767px){
+    .PaddingBandHalf{
+        padding-top: 15px;
+    }
+
+}
+
+@media (min-width:767px){
+    .Part1Padding{
+        margin-left: 0%;
+    }}
+
+    @media (min-width:767px){
+        .Part2Padding{
+            padding-right: 0%;
+        }}
+
+
+
+    /* Accordion CSS*/        
+.accordion-header{
+    border: 1px, #44413b;
+    font-size: 30px;
+}
+
+@media (max-width:767px){
+    .accordion-header{
+        font-size: 4.7vw;
+    }
+
+}
+
+
+
+.accordion-button{
+    background-color: #f7eddf;
+    color: #44413b;
+    font-size: 25px;
+    border-width: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    outline-style: solid; 
+    outline-width: 1px;
+    outline-color: #f7d6a9;;
+}
+
+
+.accordion-item{
+    border: 1px solid;
+}
+
+.accordion-button{
+    color: inherit;
+    font-size: inherit;
+    background: #f7eddf;
+    padding-left: 10px;
+    outline-style: solid; 
+    outline-width: 1px;
+    outline-color: #f7d6a9;;
+    
+}
+.accordion-button:focus{
+
+    outline: 0;
+    
+}
+
+
+.accordion-button:not(.collapsed){
+    background: #f7eddf;
+    color: inherit;
+}
+
+.accordion-button:after{
+    display: none;
+}
+
+
+
+
+.accordion-button::before{
+    content: url(https://pup.box.com/shared/static/7wpz9tk7srds9p6a7vv3g07wruics1fh.svg);
+    width: 50px !important;
+    height: 50px !important;
+    transition: .2s;
+    margin-left: 10px;
+    margin-right: 10px;
+	position: absolute;
+    transform: translate(-25%px, -50%);
+
+    
+}@media (max-width:767px){
+    .accordion-button::before{
+        content: url(https://pup.box.com/shared/static/7wpz9tk7srds9p6a7vv3g07wruics1fh.svg);
+        width: 30px !important;
+        height: 30px !important;
+        transition: .2s;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-top: auto;
+        padding-bottom: auto;
+        position: absolute;
+        transform: translate(-20%px, -50%);
+    
+    }}
+
+.accordion-button:not(.collapsed):before{
+    content: url(https://pup.box.com/shared/static/7wpz9tk7srds9p6a7vv3g07wruics1fh.svg);
+    rotate: 45deg;
+    transition: .2s;
+}
+
+.Acordion-Button-Padding{
+    padding-left: 80px;
+}
+@media (max-width:767px){.Acordion-Button-Padding{
+    padding-left: 50px;
+}}
+
+.accordion-body{
+    outline-style: solid; 
+    outline-width: 1px;
+    outline-color: #f7d6a9;;
+}
+    /* Carousel and Cards*/
+
+.card{
+    border-radius: 22px;
+    border: none;
+    margin: 5px;
+    background-color: #fff;
+    filter: drop-shadow(2px 2px 7px #044247);
+    position: relative;
+    margin-top: 35%;
+    
+}
+    
+.card-title{
+    color: #44413b;
+    font-family: "新丸ゴ B";
+    font-size: 25px;
+    bottom: 125px;
+    left: 10px;
+    margin-top: 50%;
+    text-align: center;
+}
+.card-text{
+    color: #44413b;
+    font-family: kozuka-gothic-pro;
+    font-size: 25px;
+    bottom: 125px;
+    left: 10px;
+    text-align: center;
+}
+
+.card-img-top{
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left:50%;
+    width: 60%;
+    
+
+}
+
+.footeralign-left
+{
+    text-align: right;
+    color: #f7eddf;
+    font-family: kozuka-gothic-pro;
+    font-weight: 100;
+    font-size: 21px;
+    text-decoration: underline;
+    text-decoration-color:  #f7eddf;
+
+}
+@media screen and (max-width: 767px){
+    .footeralign-left
+{
+    text-align: center;
+    font-size: 16px;
+}}
+
+a:link{
+    text-decoration: underline;
+    text-decoration-color: #f7eddf;
+}
+a:visited {
+       text-decoration: underline;
+    text-decoration-color: #f7eddf;
+}
+
+.footeralign-right
+{
+    text-align: left;
+    color: #f7eddf;
+    font-family: kozuka-gothic-pro;
+    font-weight: 100;
+    font-size: 20px;
+
+
+}
+@media screen and (max-width: 767px){
+    .footeralign-right
+{
+    text-align: center;
+    font-size: 16px;
+    
+}}
+
+.footer
+{
+    text-align: center;
+    color: #f7eddf;
+    font-family: kozuka-gothic-pro;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+
+@media screen and (max-width: 767px){
+    .footer
+    {
+        text-align: center;
+        color: #f7eddf;
+        font-family: kozuka-gothic-pro;
+        font-weight: 100;
+        font-size: 16px;
+    
+    }}
+
+
+    .Btn-Style1{
+        background :  #ee7d00;
+        text-decoration: none;
+        transition-duration: 0.4s;
+        font-family : "新丸ゴ DB";
+          color : #f7eddf;		
+        align-items: center;
+        font-size: 22px;
+        padding-top: 1vw; 
+        padding-bottom: 1vw; 
+        border-radius : 4vw;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 40%;
+        text-decoration: none;
+    }
+    
+    @media (max-width: 1023px) {
+        .Btn-Style1 {
+            font-size: 3vw;
+  
+            padding-top: 1vw; 
+            padding-bottom: 1vw; 
+            border-radius : 4vw;
+            width: 60%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .Btn-Style1 {
+            font-size: 5.5vw;
+  
+            padding-top: 3vw; 
+            padding-bottom: 3vw; 
+            border-radius : 8vw;
+            width: 90%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+    
+    
+    
+    .Btn-Style1:hover{
+            background : #0b3f5a;
+            color :  #f7eddf;		
+            text-decoration: none;
+    }
+
+    .Main-Container{
+        width: 1320px;
+    
+    }
+    
+    @media screen and (max-width: 1280px){
+        .Main-Container{
+            width: 1140px;
+        }
+    }
+    
+    @media screen and (max-width: 1140px){
+        .Main-Container{
+            width: 960px;
+        
+        }
+    }
+    
+    @media screen and (max-width: 960px){
+        .Main-Container{
+            width: 768px;
+        
+        }
+    }
+    
+    @media screen and (max-width: 768px){
+        .Main-Container{
+            width: 720px;
+        
+        }
+    }
+    
+    @media screen and (max-width: 576px){
+        .Main-Container{
+            width: 100%;
+        
+        }
+    }
+
+
+    .SeiryuBG{
+        background-image: url("../images/Seiryu.jpg");
+        background-size: cover;
+    }
+
+    .WakuBG{
+        background-image: url("../images/Waku.jpg");
+        background-size: cover;
+    }
+
+    .KanonBG{
+        background-image: url("../images/Kanon.jpg");
+        background-size: cover;
+    }
+
+
+    .padding-0{
+        padding-right:0;
+        padding-left:0;
+    }
+
+    .Profile-Img {
+        object-fit: fill;
+      }
+
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+      }
+      .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .Banner-Image {
+        background-image: url("/images/Banner\ Header-80.jpg");
+        background-size: cover;
+        background-position: top,center;
+
+      }

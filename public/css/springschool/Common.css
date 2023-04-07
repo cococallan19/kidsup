@@ -1,0 +1,927 @@
+ /* Fonts -----------------------------------------------------------------*/
+ .col-xs-5ths,
+ .col-sm-5ths,
+ .col-md-5ths,
+ .col-lg-5ths {
+     position: relative;
+     min-height: 1px;
+     padding-right: 15px;
+     padding-left: 15px;
+ }
+ 
+ .col-xs-5ths {
+     width: 20%;
+     float: left;
+ }
+ 
+ @media (min-width: 768px) {
+     .col-sm-5ths {
+         width: 20%;
+         float: left;
+     }
+ }
+ 
+ @media (min-width: 992px) {
+     .col-md-5ths {
+         width: 20%;
+         float: left;
+     }
+ }
+ 
+ @media (min-width: 1200px) {
+     .col-lg-5ths {
+         width: 20%;
+         float: left;
+     }
+ }
+
+
+
+
+
+ html {
+    overflow-x: hidden;
+    letter-spacing: 0.1px;
+}
+
+    @font-face {
+        font-family: "新丸ゴ DB";
+        src: url("/fonts/A-OTF-ShinMGoPro-DeBold.woff")format("truetype");
+        }
+    
+    @font-face {
+        font-family: "新丸ゴ R";
+        src: url("/fonts/A-OTF-ShinMGoPro-Regular.otf")
+        }
+    
+    @font-face {
+        font-family: "新丸ゴ U";
+        src: url("/fonts/A-OTF\ Shin\ Maru\ Go\ Pro\ U.otf")
+        }
+
+ /*Breakpoints------------------------------------------------------------------*/
+
+        @media (max-width: 426px) {
+            .LargeDisplay {
+                display: none;
+            }
+        }	
+        
+        @media (min-width: 426px) {
+            .MobileDisplay {
+                display: none;
+            }
+        }	
+        
+        .PaddingBand{
+            padding-top: 50px;
+        }
+        
+        @media (max-width:767px){
+            .PaddingBand{
+                padding-top: 35px;
+            }
+        
+        }
+        
+        .PaddingBandHalf{
+            padding-top: 25px;
+        }
+        
+        @media (max-width:767px){
+            .PaddingBandHalf{
+                padding-top: 15px;
+            }
+        }
+
+
+        @media (min-width: 992px) {
+            .ButtonAppear {
+                display: none;
+            }
+        }	
+
+        @media (max-width: 992px) {
+            .NavHide {
+                display: none;
+            }
+        }	
+
+        .padding-0{
+            padding-right:0;
+            padding-left:0;
+        }
+   
+    /* Navbar Definitions --------------------------------------------------------------------------------------*/
+    
+    Nav {
+        font-family: "新丸ゴ DB";
+        background-color: #3a2045;
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .nav-link{
+        color : #fbf9f7;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 18px;
+        display: inline block;
+            
+        }
+        @media screen and (max-width: 1280px){
+            .nav-link{
+                 font-size: 12px;
+             
+             }
+         }
+    
+    .nav-link:hover{
+        color : #c5e4f9;
+    }
+
+
+    
+    .NavBtn {
+        background : #fff;
+        text-align: center;
+        text-decoration: none;
+        left : 10px;
+        top : 10px;
+        transition-duration: 0.4s;
+        border-radius : 50px;
+        font-family : "新丸ゴ DB";
+        color : #3a2045;		
+        padding-left: 65px;
+        padding-right: 65px;
+        padding-top: 12px;
+        padding-bottom: 8px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    @media screen and (max-width: 1280px){
+        .NavBtn{
+             font-size: 12px;
+             padding-left: 45px;
+             padding-right: 45px;
+         }
+     }
+
+    .NavBtn:hover {
+        background : #c5e4f9;
+        color : #3a2045;	
+        	
+    }
+
+    
+    .NavLogo {
+        height: 50px;
+        width: auto;
+        transition-duration: 0.4s;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .NavLogo:hover{
+        transition-duration: 0.2s;
+        filter: drop-shadow(3px 3px 0px #4444dd);
+ 
+    }
+
+    /* Hamburger Button Settings ------------------------------------------------------------------*/
+    .navbar-toggler{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        transition: 0.5s ease-in-out;
+    }
+    .navbar-toggler,
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+        border: 0;
+    }
+    .navbar-toggler span{
+        margin: 0;
+        padding: 0;	
+    } 
+    
+    .toggler-icon{
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #fff;
+        border-radius: 2px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;	
+    }
+
+    /* Hamburger CLICKED State */
+    
+    .navbar-toggler .TopBar {
+        margin-top: 0px;
+        transform: rotate(135deg)
+            
+    }
+    .navbar-toggler .MiddleBar1, .MiddleBar2 {
+        opacity: 0%;
+        filter: alpha(opacity=0);
+    }
+    
+    .navbar-toggler .BottomBar {
+        margin-top: 0px;
+        transform: rotate(-135deg)
+    }
+    
+    /* Hamburger INACTIVE State */
+    .navbar-toggler.collapsed .TopBar{
+        margin-top: -12px;
+        transform: rotate(0deg);
+    }
+    
+    .navbar-toggler.collapsed .MiddleBar1{
+        margin-top: -4px;
+        opacity: 1;
+        filter: alpha(opacity=100)	
+    }
+    
+    .navbar-toggler.collapsed .MiddleBar2{
+        margin-top: 4px;
+        opacity: 1;
+        filter: alpha(opacity=100)	
+    }
+    .navbar-toggler.collapsed .BottomBar{
+        margin-top: 12px;
+        transform: rotate(0deg);
+    }
+   
+     /* FOOTER ------------------------------------------------------------------*/
+    
+     .section-cover-bottom{
+        width:100%;
+        height:100%;
+        z-index:1;
+        background-color: rgba(0,0,0,0.8);
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+      }
+      
+      .kids-footer {
+        padding: 0;
+        margin: 0;
+      }
+      .kids-footer li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: inline-block;
+      }
+      .kids-footer li a {
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+      }
+      .kids-footer li a:hover, .kids-footer li a:active, .kids-footer li a:focus {
+        outline: none;
+        text-decoration: none;
+      }
+      .kids-footer li a i {
+        font-size: 15px;
+      }
+      
+      #kids-footer {
+        background: #323a45;
+        color: #FFF;
+        position: relative;
+        font-family: '新丸ゴ DB', Arial, sans-serif;
+        background: url("../images/new2020/FOOTER_image.jpg");
+        background-size: cover;
+        background-position: center -600px;
+        height: auto;
+        padding:5em 0;
+      }
+      
+      #kids-footer .footer-box{
+        display: block;
+        width:80%;
+        z-index:999;
+        position: relative;
+        text-align: center;
+        margin:50px auto 2em;
+        border: 1px solid #FFF;
+      }
+      #kids-footer .footer-box h2{
+        color:#FFF;
+        padding: 1em 0;
+        font-size: 1.2em;
+        border-bottom: 1px solid #FFF;
+      }
+      
+      #kids-footer .footer-box p{
+        font-size: 0.8em;
+        margin:0;
+      }
+      
+      #kids-footer .footer-box p.phone{
+        font-size: 2em;
+        letter-spacing: -0.5px;
+        font-family: "新丸ゴ DB", arial, sans-serif;
+        font-weight: bold;
+      }
+      
+      #kids-footer ul.footer-link-list{
+        z-index:99;
+        position: relative;
+        margin-left:10%;
+      }
+      
+      #kids-footer ul.footer-link-list li{
+        font-size:0.8em;
+        font-family: arial, sans-serif;
+      }
+      
+      
+      
+      
+      #kids-footer .kids-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 8;
+        background: #3b3d40;
+        opacity: .5;
+      }
+      #kids-footer .kids-footer-content {
+        position: relative;
+        z-index: 9;
+      }
+      #kids-footer p {
+        display: block;
+        color: #fff;
+        font-weight: normal;
+        line-height: 2.0em;
+        font-size: 1em;
+        letter-spacing: 2px;
+      }
+      
+      #kids-footer .kids-lead {
+        font-size: 13px;
+        font-family: "新丸ゴ DB", arial, sans-serif;
+        letter-spacing: 4px;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      #kids-footer a {
+        color: #fff;
+      }
+      #kids-footer a:hover, #kids-footer a:active, #kids-footer a:focus {
+        color: #ef8200;
+      }
+      #kids-footer .kids-footer-logo {
+        display: block;
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      #kids-footer .kids-footer-logo a {
+        font-family: "新丸ゴ DB", arial, sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #ccc;
+        border: 2px solid #9a9fa5;
+        float: left;
+        padding: 7px 10px 7px 12px;
+      }
+      #kids-footer .kids-footer-logo a:hover, #kids-footer .kids-footer-logo a:active, #kids-footer .kids-footer-logo a:focus {
+        color: #fff;
+        border-color: #fff;
+        text-decoration: none;
+      }
+      #kids-footer ul {
+        padding: 0;
+        margin: 0;
+      }
+      #kids-footer ul li {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 14px 0;
+        line-height: 16px;
+      }
+      #kids-footer .kids-footer-copyright {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        bottom: 20px;
+      }
+      #kids-footer .kids-footer-copyright small {
+        color: #FFF;
+        font-size: 0.5em;
+      }
+      
+      @media screen and (max-width: 480px) {
+        #kids-footer .kids-footer-copyright small {
+          font-size: 0.1em;
+        }
+      }
+
+      
+      
+
+
+      .btn-new {
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+        padding:0;
+        margin:0;
+        border: none;
+        /* UI Properties */
+        background: transparent linear-gradient(90deg, #D45D69 0%, #E1A871 100%) 0% 0% no-repeat padding-box;
+        border-radius: 45px;
+        opacity: 1;
+        color:#FFF;
+        font-size: 1em;
+        }
+        
+        @media screen and (max-width: 768px) {
+          .btn-new {
+          width: 80%;
+          }
+        }
+
+
+
+
+
+    
+
+  /* Alignment & SCALE CONTROLS------------------------------------------------------------------*/      
+     
+    .Container-Parent{
+        position: relative;
+        }
+
+    .Child-Element{
+        position: absolute;
+        }
+
+         
+    .Anchor-Point-Top-Left {
+        transform: translate(0%, 0%);
+        }
+
+    .Anchor-Point-Top-Center {
+        transform: translate(-50%, 0%);
+        }
+        
+    .Anchor-Point-Top-Right {
+        transform: translate(-100%, 0%);
+        }
+                    
+    .Anchor-Point-Center-Left {
+        transform: translate(0%, -50%);
+        }
+    
+    .Anchor-Point-Center {
+        transform: translate(-50%, -50%);
+        }
+            
+    .Anchor-Point-Center-Right {
+        transform: translate(0%, -100%);
+        }
+    
+    .Anchor-Point-Bottom-Left {
+        transform: translate(0%, -100%);
+        }
+        
+    .Anchor-Point-Bottom-Center {
+        transform: translate(-50%, -100%);
+        }                            
+
+    .Anchor-Point-Bottom-Right {
+        transform: translate(-100%, -100%);
+        }                            
+            
+        
+    .Vertical-Center {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        }
+
+    .Horizontal-Center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    .Align-Right{
+        display: block;
+        margin-left: auto;
+        margin-right: 10%;
+        }
+
+    @media (max-width: 426px) {
+        .container{
+            padding-left: 5%;
+            padding-right: 5%;
+            }
+        }
+
+
+    /* TEXT SIZING CSS ------------------------------------------------------------------*/
+    h1{
+        font-family: "新丸ゴ U";
+        color: #4B5110;
+        font-size: 50px;
+        text-align: left;
+        letter-spacing : -0.5px;
+    }
+
+
+    h2{
+        font-family: "新丸ゴ DB";
+        color: #4B5110;
+        font-size: 40px;
+        text-align: left;
+        letter-spacing : -0.5px;
+    }
+
+    h3{
+        font-family:kozuka-gothic-pro;
+        color: #383537;
+        font-size: 25px;
+        text-align: left;
+        letter-spacing : -0.5px;
+    }
+
+    h4{
+        font-family: "新丸ゴ U";
+        font-size: 20px;
+        font-weight: 500;
+        color: #383537;
+        text-align: center;
+        letter-spacing : -0.5px;
+    }
+    h5{
+        
+        font-family: "新丸ゴ DB";
+        font-size: 22px;
+        color: #fff;
+    
+    
+    }
+
+    p{
+        font-family: kozuka-gothic-pro;
+        font-size: 20px;
+        font-weight: 500;
+        color: #1D1D1B;
+        letter-spacing : -0.5px;
+         line-height : 28px;
+    }
+
+    .p-sub{
+        font-size: 18px;
+        line-height : 24px;
+    }
+
+    .p-sub-2{
+        font-size: 15px;
+        line-height : 20px;
+    }
+
+
+    @media screen and (max-width: 1025px){
+    h1{
+        font-size: 35px;
+        }
+
+    h2{
+         font-size: 25px;
+         }
+
+
+    h3{
+        font-size: 20px;
+        }
+
+
+    h4{
+        font-size: 16px;    
+        }
+
+    p{
+        font-size: 16px;
+        line-height : 20px;
+    }
+    .p-sub{
+        font-size: 15px;
+        line-height : 19px;
+    }
+
+    .p-sub-2{
+        font-size: 10.5px;
+        line-height : 15px;
+    }
+
+     }
+
+     @media screen and (max-width: 960px){
+        h1{
+            font-size: 30px;
+            }
+
+        h2{
+             font-size: 20px;
+         }
+         h3{
+            font-size: 16px;
+        }
+
+         h4{
+            font-size: 10px;
+        }
+
+        p{
+            font-size: 16px;
+            line-height : 20px;
+        }
+        .p-sub{
+            font-size: 12px;
+            line-height : 17px;
+        }
+        .p-sub-2{
+            font-size: 8px;
+            line-height : 13px;
+        }
+
+     }
+
+     @media screen and (max-width: 577px){
+        h1{
+            font-size: 30px;
+            }
+
+        h2{
+             font-size: 25px;
+         }
+         h3{
+            font-size: 16px;
+        }
+
+         h4{
+            font-size: 10px;
+        }
+
+        p{
+            font-size: 18px;
+            line-height : 28px;
+        }
+        .p-sub{
+            font-size: 16px;
+            line-height : 21px;
+        }
+
+        .p-sub-2{
+            font-size: 12px;
+            line-height : 13px;
+        }
+     }
+    
+    
+    
+    @media (max-width: 393px) {
+    h1{
+        font-size: 26px;
+        }
+
+    h2{
+        font-size: 20px;
+      
+    }
+    h3{
+        font-size: 20px;
+        color: #383537;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height : 28px;
+    }
+
+    .p-sub{
+        font-size: 12px;
+        line-height : 20px;
+    }
+    }
+
+
+    /* DROPDOWN ------------------------------------------------------------------*/
+
+    .Btn-Dropdown{
+        font-family: "新丸ゴ DB";
+        background-color: #AF2796;
+        border-radius: 0;
+        width: 70%;
+        max-width: 600px;
+        text-align: left;
+        color: #ffffff;
+        font-size: 30px;
+        border: none;
+        position:relative;
+        display: inline-flex;
+        padding: 20px;
+        transition-duration: 0.2s;
+    }
+    
+    .Dropdown-Img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    
+    .Btn-Dropdown:hover{
+        font-family: "新丸ゴ DB";
+        background-color: #600854;
+        color: #ffffff;
+    }
+    
+    .Btn-Dropdown:focus{
+        font-family: "新丸ゴ DB";
+        background-color: #AF2796;
+        color: #ffffff;
+    }
+    
+    
+    
+    
+    .Btn-Dropdown:not(.collapsed){
+        font-family: "新丸ゴ DB";
+        background-color: #600854;
+        color: #ffffff;
+        transition-duration: 0.5s;
+    }
+    
+    
+    
+    .Btn-Dropdown:not(.collapsed) .Dropdown-Img{
+        transform-origin: center; 
+        transform: rotate(180deg);
+        transition-duration: 0.2s;
+        
+    }
+
+
+    @media screen and (max-width: 1025px){
+        .Btn-Dropdown{
+             font-size: 20px; 
+             width: 75%;        
+            }
+        
+        .Dropdown-Img{
+            height: 35px;
+            width: 35px;
+            }
+             
+         }
+        
+         @media screen and (max-width: 769px){
+        .Btn-Dropdown{
+             font-size: 20px;
+             width: 85%;
+            padding: 15px;  }
+        
+        .Dropdown-Img{
+            height: 32px;
+            width: 32px;
+            }       
+        }
+        
+        
+        @media (max-width: 426px) {
+        .Btn-Dropdown{
+            font-size: 18px;
+            width: 100%;
+        }
+        .Dropdown-Img{
+            height: 30px;
+            width: 30px;
+        }
+        
+        }
+
+
+
+
+
+    .Btn-Dropdown-Small{
+        font-family: "新丸ゴ DB";
+        background-color: #EF4136;
+        border-radius: 0;
+        width: 90%;
+        max-width: 600px;
+        text-align: left;
+        color: #ffffff;
+        font-size: 20px;
+        border: none;
+        position:relative;
+        display: inline-flex;
+        padding: 15px;
+        transition-duration: 0.2s;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .Dropdown-Img-Small{
+        height: 35px;
+        width: 35px;
+    }
+    
+    
+    .Btn-Dropdown-Small:hover{
+        font-family: "新丸ゴ DB";
+        background-color: #7A1F1C;
+        color: #ffffff;
+    }
+    
+    .Btn-Dropdown-Small:focus{
+        font-family: "新丸ゴ DB";
+        background-color: #EF4136;
+        color: #ffffff;
+    }
+    
+    
+    
+    
+    .Btn-Dropdown-Small:not(.collapsed){
+        font-family: "新丸ゴ DB";
+        background-color: #7A1F1C;
+        color: #ffffff;
+        transition-duration: 0.5s;
+    }
+    
+    
+    
+    .Btn-Dropdown-Small:not(.collapsed) .Dropdown-Img-Small{
+        transform-origin: center; 
+        transform: rotate(180deg);
+        transition-duration: 0.2s;
+        
+    }
+    
+    @media screen and (max-width: 1025px){
+    .Btn-Dropdown-Small{
+         font-size: 18px; 
+         width: 90%;        
+        }
+    
+    .Dropdown-Img-Small{
+        height: 28px;
+        width: 28px;
+        }
+         
+     }
+    
+     @media screen and (max-width: 769px){
+    .Btn-Dropdown-Small{
+         font-size: 15px;
+         width: 90%;
+        padding: 7.5px;  }
+    
+    .Dropdown-Img-Small{
+        height: 25px;
+        width: 25px;
+        }       
+    }
+    
+    
+    @media (max-width: 426px) {
+    .Btn-Dropdown-Small{
+        font-size: 20px;
+        width: 100%;
+    }
+    .Dropdown-Img-Small{
+        height: 30px;
+        width: 30px;
+    }
+    
+    }

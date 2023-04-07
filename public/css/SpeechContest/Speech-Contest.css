@@ -1,0 +1,440 @@
+.Land-ClassHeader-Text{
+    font-family: "新丸ゴ U";
+    color: #637C2A;
+    font-size: 42px;
+    margin-right: auto;
+    width: max-content;
+    padding-left: 30px;
+    }
+
+
+    .Land-ClassContainer{
+        background-color: #D6E3A0;
+        border-radius: 30px;
+    }
+    
+    .Land-ClassText{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+@media screen and (max-width: 1280px){
+.Land-ClassHeader-Text{
+         font-size: 20px;
+     
+     }
+ }
+
+ @media screen and (max-width: 960px){
+.Land-ClassHeader-Text{
+         font-size: 18px;
+     
+     }
+ }
+
+
+@media (max-width: 426px) {
+.Land-ClassHeader-Text{
+    font-size: 30px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  
+}
+
+.Land-ClassText{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.Land-ClassContainer{
+    margin-top: 50px;
+}
+
+}
+
+.Sky-ClassHeader-Text{
+    font-family: "新丸ゴ U";
+    color: #253268;
+    font-size: 42px;
+    margin-right: auto;
+    width: max-content;
+    padding-left: 30px;
+    }
+
+
+    .Sky-ClassContainer{
+        background-color: #9DD6F0;
+        border-radius: 30px;
+        
+    }
+    
+    .Sky-ClassText{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+@media screen and (max-width: 1280px){
+.Sky-ClassHeader-Text{
+         font-size: 20px;
+     
+     }
+ }
+
+ @media screen and (max-width: 960px){
+.Sky-ClassHeader-Text{
+         font-size: 18px;
+     
+     }
+ }
+
+
+@media (max-width: 426px) {
+.Sky-ClassHeader-Text{
+    font-size: 30px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  
+}
+
+.Sky-ClassText{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.Sky-ClassContainer{
+    margin-top: 50px;
+}
+
+}
+
+
+.Galaxy-ClassHeader-Text{
+    font-family: "新丸ゴ U";
+    color: #642F75;
+    font-size: 42px;
+    margin-right: auto;
+    width: max-content;
+    padding-left: 30px;
+    }
+
+
+    .Galaxy-ClassContainer{
+        background-color: #C19ECA;
+        border-radius: 30px;
+    }
+    
+    .Galaxy-ClassText{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+@media screen and (max-width: 1280px){
+.Galaxy-ClassHeader-Text{
+         font-size: 20px;
+     
+     }
+ }
+
+ @media screen and (max-width: 960px){
+.Galaxy-ClassHeader-Text{
+         font-size: 18px;
+     
+     }
+ }
+
+
+@media (max-width: 426px) {
+.Galaxy-ClassHeader-Text{
+    font-size: 30px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  
+}
+
+.Galaxy-ClassText{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.Galaxy-ClassContainer{
+    margin-top: 50px;
+}
+
+}
+
+.Specialist-ClassHeader-Text{
+    font-family: "新丸ゴ U";
+    color: #9A881F;
+    font-size: 42px;
+    margin-right: auto;
+    width: max-content;
+    padding-left: 30px;
+    }
+
+
+    .Specialist-ClassContainer{
+        background-color: #FFF49E;
+        border-radius: 30px;
+    }
+    
+    .Specialist-ClassText{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .Giolitti-BG{
+        background-size: 28%;
+    }
+
+    @media screen and (max-width: 1441px){
+        .Giolitti-BG{
+            background-size: 40%;
+        }
+         }
+
+
+@media screen and (max-width: 1280px){
+.Specialist-ClassHeader-Text{
+         font-size: 20px;
+     
+     }
+     .Giolitti-BG{
+        background-size: 50%;
+    }
+ }
+
+ @media screen and (max-width: 960px){
+.Specialist-ClassHeader-Text{
+         font-size: 18px;
+     
+     }
+     .Giolitti-BG{
+        background-size: 55%;
+    }
+ }
+
+
+@media (max-width: 426px) {
+.Specialist-ClassHeader-Text{
+    font-size: 30px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  
+}
+
+.Specialist-ClassText{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.Specialist-ClassContainer{
+    margin-top: 50px;
+}
+
+.Kid-Center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+}
+
+.btn-land{
+    background-color: #D6E3A0;
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-land:hover{
+    background-color: #637C2A;
+    transition-duration: 0.4s;
+    
+}
+.btn-land:active{
+    background-color: #637C2A;
+    transition-duration: 0.4s;
+    
+}
+
+.btn-Sky{
+    background-color: #9DD6F0;
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-Sky:hover{
+    background-color: #253268;
+    transition-duration: 0.4s;
+    
+    
+}
+
+.btn-Galaxy{
+    background-color: #C19ECA;
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-Galaxy:hover{
+    background-color: #642F75;
+    transition-duration: 0.4s;
+    
+}
+
+.btn-Specialist{
+    background-color: #FFF49E;
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-Specialist:hover{
+    background-color: #9A881F;
+    transition-duration: 0.4s;
+    
+}
+
+.Btn-VideoLink{
+    background :  #E52E12;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    font-family : "新丸ゴ DB";
+    color : #E3DACE;		
+    text-align: left;
+    font-size: 30px;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    border-radius : 4rem;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+
+@media screen and (max-width: 1200px){
+    .Btn-VideoLink {
+        font-size: 20px;
+        padding-top: 6.6px; 
+        padding-bottom: 6.6; 
+        border-radius : 4rem;
+    }
+ }
+
+ @media screen and (max-width: 992px){
+    .Btn-VideoLink {
+        font-size: 18px;
+        padding-top: 6.3px; 
+        padding-bottom: 6.3; 
+        border-radius : 4rem;
+        
+    }
+ }
+
+
+@media (max-width: 426px) {
+    .Btn-VideoLink{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+}
+
+.Btn-VideoLink:hover{
+    background : #91180C;
+    text-decoration: none;
+    color : #f6ede0;	
+
+}
+
+
+
+.Testimony{
+    background-color: #F7DBCB;
+    border-radius: 25px;
+  
+  }
+  
+  .TestimonyText{
+    padding-top: 7.5%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-bottom: 7.5%;
+    display: block;
+  
+  }
+  
+  @media (max-width: 426px) {
+     
+      .Testimony{
+          font-size: 15.1px;
+          margin-bottom: 85px;
+          display: block;
+  
+          
+      }
+      .TestimonyMobileText{
+          font-size: 15.5px;
+  
+      }
+  
+      .TestimonyText{
+          padding-top: 20%;
+          padding-left: 4%;
+          padding-right: 4%;
+          display: block;
+      }
+  }
+
+
+  @media (min-width: 426px) {
+    .carousel-inner {
+      display: flex;
+    }
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+  }
+
+  .card{
+    margin: 10px;
+    border: none;
+}

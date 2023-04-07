@@ -1,0 +1,567 @@
+    /* CUSTOM-NAVBAR ------------------------------------------------------------------*/
+
+Nav {
+    background-color: #AF2796;
+}
+
+.nav-link{
+    color : #fff;
+}
+
+
+.nav-link:hover{
+    color : #600854;
+}
+
+.NavBtn {
+    color : #600854;		
+}
+
+.NavBtn:hover{
+    color: #fff;
+    background-color: #600854;
+}
+
+.NavLogo:hover{
+    transition-duration: 0.2s;
+    filter: drop-shadow(3px 3px 0px #600854);
+}
+
+
+    /* TEXT DEFINITIONS ------------------------------------------------------------------*/
+    @media (max-width: 426px) {
+
+    
+        .p-sub{
+            font-size: 23px;
+            line-height : 30px;
+        }
+        }
+    
+
+@media (max-width: 376px) {
+
+
+
+
+    .p-sub{
+        font-size: 15px;
+        line-height : 20px;
+    }
+    }
+
+
+    /* BANNER TWEAKS ------------------------------------------------------------------*/
+.BannerContainer{
+    padding-left: 10%;
+}
+
+@media (max-width: 426px) {
+    .BannerContainer{
+       padding-left: 5%;
+       padding-right: 5%;
+    }
+}
+
+
+.TestimonialCard{
+    border-radius: 20px;
+    filter: drop-shadow(3px 3px 5px #9FAD36);
+    background-color: #fbf9f7;
+    outline: none;
+    border: none;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+.TestemonialBody{
+    outline: none;
+    border: none;
+    padding-top: 25%;
+    padding-left: 15px;
+    padding-right: 15%;
+    padding-bottom: 35%;
+    
+}
+@media (max-width: 769px) {
+    .TestemonialBody{
+
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+}
+
+
+.TestimonialVector{
+    transform: translate(-50%, -100%);
+    position: absolute;
+    width: 30%;
+    left: 80%;
+    vertical-align: bottom;
+    top: 100%;
+}
+
+
+
+
+
+.FourPointsBoxes{
+    position: relative;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-bottom: none;
+    
+}
+
+.FourPointsIcons{
+    position: relative;
+    width: 100%;
+    
+}
+
+@media (max-width: 426px) {
+    .FourPointsIcons{
+        transform: translate(-50%, 0%);
+        position: relative;
+        width: 70%;
+        left: 50%;
+        padding-bottom: 20px;
+    }
+    .FourPointsBoxes{
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+    }
+
+    .TestimonialCard{
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 0px #9FAD36);
+        background-color: #fbf9f7;
+        outline: none;
+        border: none;
+        position: relative;
+        display: block;
+        height: 500px;
+        width: 100%;
+    }
+}
+
+
+
+
+.KidBreakpointScale{
+    width: 660px;
+    left: 66%;
+}
+
+.KidBreakpointPadding{
+    padding-top: 350px;
+}
+
+@media (max-width: 1200px) {
+    .KidBreakpointScale{
+        width: 570px;
+    }
+    .KidBreakpointPadding{
+        padding-top: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .KidBreakpointScale{
+        width: 480px;
+    }
+    .KidBreakpointPadding{
+        padding-top: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .KidBreakpointScale{
+        width: 360px;
+    }
+    .KidBreakpointPadding{
+        padding-top: 200px;
+    }
+}
+
+.ActivityBackground{
+    background-image: 
+    repeating-linear-gradient(
+      90deg,
+      #83CCE4,
+      #83CCE4 15px,
+      #99D8EA 15px,
+      #99D8EA 30px /* determines size */
+    );
+}
+
+/* CAROUSEL - ACTIVITIES ------------------------------------ */
+
+
+.CardPadding{
+    padding-right:20px; 
+    padding-bottom: 25px;
+    padding-left: -20px;
+    padding-top: 10px;
+}
+
+.ActivityCard{
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px -10px rgba(0, 0, 0, 0.15);
+    background-color: #f9fbfd;
+    outline: none;
+    border: none;
+    position: relative;
+    display: block;
+    height: 100%;
+    margin-left: 7.5%;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.ActivityImage{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.ActivityBody{
+    outline: none;
+    border: none;
+    background-color: #f9fbfd;
+
+
+
+    
+}
+
+.ActivityBadge{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    top: 15%;
+    
+}
+
+.ActivityDate{
+    font-family: "新丸ゴ U";
+    font-size: 40px;
+    color: #fff;
+    background-color: #AF2796;
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    left: 100%;
+    transform: translate(-100%, 0%);
+    border-radius: 0px 20px 00px 20px;
+}
+
+.ActivityName{
+    font-family: "新丸ゴ DB";
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 1280px){
+    .ActivityDate{
+         font-size: 30px;
+        }
+
+        .ActivityName{
+
+            font-size: 28px;
+
+        }
+
+
+
+         
+}
+
+@media screen and (max-width: 960px){
+    .ActivityDate{
+         font-size: 20px;
+ }
+
+ 
+ .ActivityName{
+
+    font-size: 18px;
+
+}
+}
+
+@media (max-width: 426px) {
+
+    .ActivityCard{
+        padding-bottom: 20px;
+    }
+
+
+    .ActivityDate{
+        font-size: 35px;}
+
+
+.ActivityName{
+
+   font-size: 20px;
+}
+}
+
+#BottomCarouselIndicators .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 66vh;
+    overflow: hidden;
+
+}
+
+    
+@media (max-width: 1200px) {
+      
+    
+    #BottomCarouselIndicators .carousel-item img {
+        object-fit: cover;
+        object-position: center;
+        height: 50vh;
+        overflow: hidden;
+    
+    }
+     }
+
+     
+     @media (max-width: 426px) {
+        #BottomCarouselIndicators .carousel-item img {
+            object-fit: cover;
+            object-position: center;
+            height: 33vh;
+            overflow: hidden;
+        }
+        }
+    
+    
+ 
+/* ACCORDION FAQ ------------------------------------ */   
+
+.accordion-flush{
+    border-radius: 0px;
+}
+
+        .accordion-header{
+    border: 1px, #303135;
+    font-size: 20px;
+    border-radius: 0px;
+}
+
+@media (max-width:767px){
+    .accordion-header{
+        font-size: 4.0vw;
+    }
+
+}
+
+.accordion-collapse{
+    border-radius: 0;
+    border-color: #303135;
+}
+
+.accordion-button{
+    background-color: #D6E37F;
+    color: #44413b;
+    font-size: 25px;
+    border-width: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    outline-style: solid; 
+    outline-width: 1px;
+    outline-color: #303135;
+    border-radius: 0px;
+    border-color: #303135;
+}
+
+
+.accordion-item{
+    border: 1px solid;
+    border-radius: 0px;
+}
+
+.accordion-button{
+    color: inherit;
+    font-size: inherit;
+    background: #D6E37F;
+    padding-left: 10px;
+    outline-style: solid; 
+    outline-width: 1px;
+    outline-color: #303135;;
+    border-radius: 0px;
+    border-color: #303135;
+}
+
+.accordion-button:focus{
+
+    outline: 0;
+    
+}
+.accordion-button.collapsed{
+    background: #D6E37F;
+    color: inherit;
+    border-radius: 0px;
+    border-color: #303135;
+}
+
+.accordion-button:not(.collapsed){
+    background: #D6E37F;
+    color: inherit;
+    border-radius: 0px;
+    border-color: #303135;
+}
+
+.accordion-button:after{
+    display: none;
+    border-radius: 0px;
+    border-color: #303135;
+}
+
+
+
+
+.accordion-button::before{
+    content: url(/images/springschool/Accordion-Toggle.svg);
+    width: 50px !important;
+    height: 50px !important;
+    transition: .2s;
+    margin-left: 10px;
+    margin-right: 10px;
+	position: absolute;
+    transform: translate(-25%px, -50%);
+
+    
+}@media (max-width:767px){
+    .accordion-button::before{
+        content: url(/images/springschool/Accordion-Toggle.svg);
+        width: 30px !important;
+        height: 30px !important;
+        transition: .2s;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-top: auto;
+        padding-bottom: auto;
+        position: absolute;
+        transform: translate(-20%px, -50%);
+    
+    }}
+
+.accordion-button:not(.collapsed):before{
+    content: url(/images/springschool/Accordion-Toggle.svg);
+    rotate: 45deg;
+    transition: .2s;
+}
+
+.Acordion-Button-Padding{
+    padding-left: 80px;
+}
+@media (max-width:767px){.Acordion-Button-Padding{
+    padding-left: 50px;
+}}
+
+.accordion-body{
+    outline-style: solid; 
+    outline-width: 1px;
+    outline-color: #303135;
+    border-radius: 0;
+    border-color: #303135;
+}
+
+
+/* BUTTONSTYLE ------------------------------------ */   
+
+
+.Btn-Regular-2{
+    background :  #AF2796;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    font-family : "新丸ゴ DB";
+    color : #FFFFFF;		
+    text-align: center;
+    font-size: 30px;
+    padding-top: 1rem; 
+    padding-bottom: 1rem; 
+    border-radius : 4rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 75%;
+
+}
+
+
+
+@media screen and (max-width: 1280px){
+    .Btn-Regular-2 {
+        font-size: 20px;
+        padding-top: 2vw; 
+        padding-bottom: 2vw; 
+        border-radius : 6vw;
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ }
+
+ @media screen and (max-width: 992px){
+    .Btn-Regular-2 {
+        font-size: 20px;
+        padding-top: 2vw; 
+        padding-bottom: 2vw; 
+        border-radius : 6vw;
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ }
+
+
+@media (max-width: 425px) {
+    .Btn-Regular-2{
+        font-size: 20px;
+        width: 100%;
+
+}
+}
+
+.Btn-Regular-2:hover{
+    background : #36245A;
+    text-decoration: none;
+    color : #FFFFFF;	
+
+}
+
+/* DAILY SCHEDULE STYLE ------------------------------------ */   
+
+.Daily-Schedule-1{
+    background-color: #F4F6F9;
+    width: 100%;
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1px;
+    padding-top: 5px;
+}
+
+.Daily-Schedule-2{
+    background-color: #F4CAC9;
+    width: 100%;
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2px;
+    padding-top: 5px;
+}
+

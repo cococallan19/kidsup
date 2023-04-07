@@ -1,0 +1,119 @@
+.Main_Background{
+    background-image: url(./images/profile/Main-Background.jpg);
+    background-size: cover;
+}
+
+
+p{
+    font-family: kozuka-gothic-pro;
+    font-size: 16px;
+    font-weight: 500;
+    color: #383537;
+}
+
+
+
+.table, th, td {
+
+    background-color: #fff;
+
+}
+
+
+@media (min-width: 767px) {
+    .MobileDisplay {
+        display: none;
+    }
+
+}
+.PaddingBand{
+    padding-top: 2.5%;
+}
+
+@media (max-width:767px){
+    .PaddingBand{
+        padding-top: 35px;
+    }
+
+}
+  
+
+.Main_Background{
+    background-color: #f5ebd9;
+}
+
+
+p{
+    font-family: kozuka-gothic-pro;
+    font-size: 20px;
+    font-weight: 500;
+    color: #383537;
+}
+
+.p2{
+    font-family: kozuka-gothic-pro;
+    font-size: 18px;
+    font-weight: 500;
+    color: #383537;
+}
+
+
+
+
+
+.table, th, td {
+
+    background-color: #fff;
+
+}
+@media (max-width: 767px) {
+    .LargeDisplay {
+        display: none;
+    }
+}	
+
+@media (min-width: 767px) {
+    .MobileDisplay {
+        display: none;
+    }
+
+}
+.PaddingBand{
+    padding-top: 5%;
+}
+
+@media (max-width:767px){
+    .PaddingBand{
+        padding-top: 35px;
+    }
+
+}
+
+.horizontal-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.RoundImage{
+    max-width: 80%;
+}
+
+@media (max-width:425px){
+    .RoundImage{
+        max-width: 60%;
+    }
+}
+
+  @media (max-width:425px){
+    .TextPadding{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.MainText{
+    font-family: kozuka-gothic-pro, sans-serif;
+    font-weight: 600;
+    font-style:  normal;
+}

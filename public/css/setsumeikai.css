@@ -1,0 +1,1310 @@
+ /* Fonts -----------------------------------------------------------------*/
+html {
+    overflow-x: hidden;
+    letter-spacing: 0.1px;
+}
+
+    @font-face {
+        font-family: "新丸ゴ DB";
+        src: url("/fonts/A-OTF-ShinMGoPro-DeBold.woff")format("truetype");
+        }
+    
+    @font-face {
+        font-family: "新丸ゴ R";
+        src: url("/fonts/A-OTF-ShinMGoPro-Regular.otf")
+        }
+    
+    @font-face {
+        font-family: "新丸ゴ U";
+        src: url("/fonts/A-OTF\ Shin\ Maru\ Go\ Pro\ U.otf")
+        }
+
+ /*Breakpoints------------------------------------------------------------------*/
+
+        @media (max-width: 767px) {
+            .LargeDisplay {
+                display: none;
+            }
+        }	
+        
+        @media (min-width: 767px) {
+            .MobileDisplay {
+                display: none;
+            }
+        }	
+        
+        .PaddingBand{
+            padding-top: 5%;
+        }
+        
+        @media (max-width:767px){
+            .PaddingBand{
+                padding-top: 35px;
+            }
+        
+        }
+        
+        .PaddingBandHalf{
+            padding-top: 2%;
+        }
+        
+        @media (max-width:767px){
+            .PaddingBandHalf{
+                padding-top: 15px;
+            }
+        }
+
+
+        @media (min-width: 992px) {
+            .ButtonAppear {
+                display: none;
+            }
+        }	
+
+        @media (max-width: 992px) {
+            .NavHide {
+                display: none;
+            }
+        }	
+
+        
+        
+  /* Alignment Controls------------------------------------------------------------------*/       
+        
+        .Anchor-Point {
+            transform: translate(-50%, -50%);
+            }
+        
+                
+        .Anchor-Point-Bottom {
+            transform: translate(-50%, -100%);
+            }
+
+        .Anchor-Point-Top {
+            transform: translate(-50%, -100%);
+            }
+        
+            .Anchor-Point-Bottom-Left {
+                transform: translate(0%, -100%);
+                }
+                    
+                .Anchor-Point-Middle-Left {
+                    transform: translate(0%, -50%);
+                    }
+                            
+                    .Anchor-Point-Middle-Right {
+                        transform: translate(100%, -50%);
+                        }
+
+                        .Anchor-Point-Menu {
+                            transform: translate(-50%, 0%);
+                            }
+
+                             .Anchor-Point-Hamburger {
+                            transform: translate(100%, 0%);
+                            }
+        
+        .Vertical-Center {
+            margin: 0;
+            position: relative;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        .Horizontal-Center{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }    
+        .Align-Right{
+            display: block;
+            margin-left: auto;
+            margin-right: 10%;
+        }
+  /* Container Scale------------------------------------------------------------------*/       
+
+
+.container{
+    max-width: 1320px;
+}
+
+
+
+      /* Navbar Definitions------------------------------------------------------------------*/
+    
+      
+
+
+      Nav {
+        font-family: "新丸ゴ DB";
+        background-color: #05425C;
+        width: 100%;
+
+        text-align: center;
+        position: fixed;
+        top: 0;
+    }
+.NavDiv{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+    
+.TopBars{
+    height: 60px;
+}
+    .nav-link{
+        color : #fbf9f7;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 18px;
+        display: inline block;
+        
+    }
+    @media screen and (max-width: 1280px){
+        .nav-link{
+             font-size: 12px;
+         
+         }
+     }
+
+    
+    .nav-link:hover{
+        color : #EF8000;
+    }
+
+    .nav-tabs:active{
+        border-bottom: 0px solid transparent;
+    }
+
+    
+    .NavBtn {
+        transition-duration: 0.4s;
+       background: #fff;
+       color: #00445E;
+
+    }
+
+
+    .NavBtn:hover {
+        background-color : #EF8000;
+        color : #EF8000;	
+        	
+    }
+
+    
+    .NavLogo {
+        width: 400px;
+        transition-duration: 0.3s;
+    }
+
+
+    @media screen and (max-width: 1440px){
+        .NavLogo {
+            width: 250px;
+     }
+    }
+    @media screen and (max-width: 992px){
+        .NavLogo {
+            width: 00px;
+            
+     }
+        .navbar-brand{
+            pointer-events: none;
+        }
+    }
+
+        .NavLogo:hover{
+
+            filter: drop-shadow(1px 1px 0px #EF8000);
+        }
+
+        .NavbarButton:hover{
+            filter: drop-shadow(1px 1px 0px #EF8000);
+        }
+    /* Hamburger Button Settings------------------------------------------------------------------*/
+    .navbar-toggler{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        transition: 0.5s ease-in-out;
+    }
+    .navbar-toggler,
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+        border: 0;
+    }
+    .navbar-toggler span{
+        margin: 0;
+        padding: 0;	
+    } 
+    
+    .toggler-icon{
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #fff;
+        border-radius: 2px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;	
+    }
+
+    /* Hamburger CLICKED State------------------------------------------------------------------*/
+    
+    .navbar-toggler .TopBar {
+        margin-top: 0px;
+        transform: rotate(135deg)
+            
+    }
+    .navbar-toggler .MiddleBar1, .MiddleBar2 {
+        opacity: 0%;
+        filter: alpha(opacity=0);
+    }
+    
+    .navbar-toggler .BottomBar {
+        margin-top: 0px;
+        transform: rotate(-135deg)
+    }
+    .navbar-toggler .TogglerText{
+        font-size: 10px;
+        color: #fff;
+        position: relative;
+        margin-top: -10px;
+        margin-left: -18px;
+    }
+    
+    /* Hamburger INACTIVE State------------------------------------------------------------------*/
+    .navbar-toggler.collapsed .TopBar{
+        margin-top: -12px;
+        transform: rotate(0deg);
+    }
+    
+    .navbar-toggler.collapsed .MiddleBar1{
+        margin-top: -4px;
+        opacity: 1;
+        filter: alpha(opacity=100)	
+    }
+    
+    .navbar-toggler.collapsed .MiddleBar2{
+        margin-top: 4px;
+        opacity: 1;
+        filter: alpha(opacity=100)	
+    }
+    .navbar-toggler.collapsed .BottomBar{
+        margin-top: 12px;
+        transform: rotate(0deg);
+    }
+
+    /* FOOTER ------------------------------------------------------------------*/
+    
+    .footeralign-left
+{
+    text-align: right;
+    color: #f7eddf;
+    font-family: kozuka-gothic-pro;
+    font-weight: 100;
+    font-size: 21px;
+    text-decoration: underline, #f7eddf;
+    text-decoration-color:  #f7eddf;
+
+}
+@media screen and (max-width: 767px){
+    .footeralign-left
+{
+    text-align: center;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-color: #f7eddf;
+}}
+
+.footeralign-right
+{
+    text-align: left;
+    color: #f7eddf;
+    font-family: kozuka-gothic-pro;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: #f7eddf;
+
+
+}
+@media screen and (max-width: 767px){
+    .footeralign-right{
+    text-align: center;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-color: #f7eddf;
+    
+}}
+
+.footer
+{
+    text-align: center;
+    color: #f7eddf;
+    font-family: kozuka-gothic-pro;
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: #f7eddf;
+
+
+}
+
+@media screen and (max-width: 767px){
+    .footer
+    {
+        text-align: center;
+        color: #f7eddf;
+        font-family: kozuka-gothic-pro;
+        font-weight: 100;
+        font-size: 16px;
+        text-decoration: underline;
+        text-decoration-color: #f7eddf;
+    }}
+  
+    /* SPECIFIC CSS ------------------------------------------------------------------*/
+
+
+
+
+    .carousel .carousel-indicators button {
+        
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #EDCB9D;
+       
+    }
+    
+    @media (max-width: 767px) {
+        .carousel .carousel-indicators button {
+        
+            width: 10px;
+            height: 10px;
+
+               
+    }	
+}	
+
+    .carousel .carousel-indicators button:active {
+
+       background-color: #521C01;
+       
+    }
+
+
+    @media (max-width: 767px) {
+        .LargeDisplay {
+            display: none;
+        }
+    }	
+    
+    @media (min-width: 769px) {
+        .MobileDisplay {
+            display: none;
+        }
+    }	
+    @media (min-width: 426px) {
+        .SmallDisplay {
+            display: none;
+
+            
+        }
+    }	
+
+    @media (min-width: 992px) {
+        .SpecialHide {
+            display: none;
+
+            
+        }
+    }	
+
+
+    h2{
+        font-family: "新丸ゴ DB";
+        color: #383537;
+        font-size: 33px;
+        text-align: left;
+    }
+    @media screen and (max-width: 1280px){
+        h2{
+             font-size: 28px;
+         
+         }
+     }
+
+     @media screen and (max-width: 960px){
+        h2{
+             font-size: 25px;
+         
+         }
+     }
+    
+    
+    @media (max-width: 426px) {
+    h2{
+        font-size: 5.5vw;
+        color: #383537;
+    }
+    }
+
+    h3{
+        font-family: "新丸ゴ DB";
+        color: #383537;
+        font-size: 25px;
+        text-align: left;
+    }
+    
+
+     @media screen and (max-width: 960px){
+        h3{
+             font-size: 18px;
+         
+         }
+     }
+    
+    
+    @media (max-width: 425px) {
+    h3{
+        font-size: 5.5vw;
+        color: #383537;
+    }
+    }
+    
+
+
+    h4{
+        font-family: "新丸ゴ DB";
+        font-size: 20px;
+        font-weight: 500;
+        color: #383537;
+        text-align: center;
+    }
+    @media screen and (max-width: 1280px){
+       h4{
+             font-size: 16px;
+         
+         }
+     }
+
+     @media screen and (max-width: 960px){
+        h4{
+             font-size: 10px;
+         
+         }
+     }
+    
+    @media (max-width: 426px) {
+        h4{
+            font-size: 1.5vw;
+            font-weight: 500;
+        }}
+    
+    
+
+
+
+
+
+
+    p{
+        font-family: kozuka-gothic-pro;
+        font-size: 20px;
+        font-weight: 500;
+        color: #383537;
+    }
+    @media screen and (max-width: 1280px){
+        p{
+             font-size: 15px;
+         
+         }
+     }
+
+     @media screen and (max-width: 960px){
+        p{
+             font-size: 10px;
+         
+         }
+     }
+    
+    @media (max-width: 426px) {
+        p{
+            font-size: 14px;
+            font-weight: 500;
+        }}
+
+
+        .pMini{
+            font-family: kozuka-gothic-pro;
+            font-size: 17px;
+            font-weight: 500;
+            color: #383537;
+        }
+        @media screen and (max-width: 1280px){
+            .pMini{
+                 font-size: 13px;
+             
+             }
+         }
+    
+         @media screen and (max-width: 960px){
+            .pMini{
+                 font-size: 10px;
+             
+             }
+         }
+        
+        @media (max-width: 426px) {
+            .pMini{
+                font-size: 14px;
+                font-weight: 500;
+            }}
+    
+    
+
+
+
+
+        .SixCards{
+            font-family: kozuka-gothic-pro;
+            font-size: 20px;
+            font-weight: 500;
+            color: #383537;
+            vertical-align: top;
+            align-items: center;
+            width: 95%;
+        }
+        @media screen and (max-width: 1280px){
+            .SixCards{
+                 font-size: 15px;
+             
+             }
+         }
+    
+         @media screen and (max-width: 960px){
+            .SixCards{
+                 font-size: 10px;
+             
+             }
+         }
+        
+        @media (max-width: 426px) {
+            .SixCards{
+                font-size: 7.5px;
+                font-weight: 500;
+            }}
+
+
+
+
+
+
+    
+
+     .FourReasons{
+        font-family: kozuka-gothic-pro;
+        font-size: 18px;
+        font-weight: 500;
+        color: #383537;
+        padding-left: 10%;
+    }
+    @media screen and (max-width: 1280px){
+        .FourReasons{
+             font-size: 13px;
+         
+         }
+     }
+
+     @media screen and (max-width: 960px){
+        .FourReasons{
+             font-size: 10px;
+         
+         }
+     }
+    
+    @media (max-width: 426px) {
+        .FourReasons{
+            font-size: 15px;
+            font-weight: 500;
+            padding-left: 0%;
+        }}    
+    
+
+    .Container-Parent{
+        position: relative;
+    }
+
+    .Child-Element{
+        position: absolute;
+    }
+
+
+    /* BUTTONS ------------------------------------------------------------------*/
+
+        .Btn-Setsumeikai{
+            background :  #1B415A;
+            text-decoration: none;
+            transition-duration: 0.4s;
+            font-family : "新丸ゴ DB";
+            color : #E3DACE;		
+            text-align: center;
+            font-size: 2rem;
+            padding-top: 1rem; 
+            padding-bottom: 1rem; 
+            border-radius : 4rem;
+            padding-left: 20%;
+            padding-right: 20%;
+            width: 90%;
+            text-align: center;
+        }
+
+
+        @media screen and (max-width: 1280px){
+            .Btn-Setsumeikai {
+                font-size: 25px;
+                padding-top: 3vw; 
+                padding-bottom: 3vw; 
+                border-radius : 8vw;
+                width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+         }
+    
+         @media screen and (max-width: 960px){
+            .Btn-Setsumeikai {
+                font-size: 20px;
+                padding-top: 3vw; 
+                padding-bottom: 3vw; 
+                border-radius : 8vw;
+                width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+         }
+        
+        
+        @media (max-width: 425px) {
+            .Btn-Setsumeikai{
+            font-size: 6vw;
+    
+        }
+        }
+        
+        .Btn-Setsumeikai:hover{
+            background : #EF8000;
+            text-decoration: none;
+            color : #f6ede0;	
+        
+    }
+
+
+    .Btn-Setsumeikai-2{
+        background :  #F38000;
+        text-decoration: none;
+        transition-duration: 0.4s;
+        font-family : "新丸ゴ DB";
+        color : #E3DACE;		
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 1rem; 
+        padding-bottom: 1rem; 
+        border-radius : 4rem;
+        padding-left: auto;
+        padding-right: auto;
+        width: 800px;
+        text-align: center;
+    }
+
+
+    @media screen and (max-width: 1024px){
+        .Btn-Setsumeikai-2 {
+            font-size: 25px;
+            padding-top: 2vw; 
+            padding-bottom: 2vw; 
+            border-radius : 8vw;
+            width: 720px;
+            display: block;
+
+        }
+     }
+
+     @media screen and (max-width: 960px){
+        .Btn-Setsumeikai-2 {
+            font-size: 20px;
+            padding-top: 2vw; 
+            padding-bottom: 2vw; 
+            border-radius : 8vw;
+            width: 60%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+     }
+    
+    
+    @media (max-width: 426px) {
+        .Btn-Setsumeikai-2{
+          width: 90%;  
+        font-size: 6vw;
+
+    }
+    }
+    
+    .Btn-Setsumeikai-2:hover{
+        background : #4088BA;
+        text-decoration: none;
+        color : #f6ede0;	
+    
+}
+
+
+
+
+
+    .padding-0{
+        padding-right:0;
+        padding-left:0;
+    }
+
+    /* Schedule Tabs & Dropdown Buttons ------------------------------------------------------------------*/
+    
+
+    .Btn-Dropdown-Tab{
+        text-decoration: none;
+        font-family: "新丸ゴ DB";
+        color: #383537;
+        font-size: 33px;
+        text-align: center;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        border: none;
+        float:none; /*to make sure there is no active float*/
+        display: inline-block;
+
+        margin-left: auto;
+        margin-right: auto;
+        outline: none;
+    }
+
+    @media screen and (max-width: 1280px){
+        .Btn-Dropdown-Tab{
+             font-size: 28px;
+         
+         }
+     }
+
+     @media screen and (max-width: 960px){
+        .Btn-Dropdown-Tab{
+             font-size: 25px;
+         
+         }
+     }
+    
+    
+    @media (max-width: 426px) {
+    .Btn-Dropdown-Tab{
+        font-size: 4vw;
+        color: #383537;
+    }
+    }
+
+
+
+
+
+    .Btn-Dropdown{
+        font-family: "新丸ゴ DB";
+        background-color: #383537;
+        border-radius: 0;
+        width: 100%;
+        text-align: left;
+        color: #ffffff;
+        font-size: 45px;
+        border: none;
+        position:relative;
+        display: inline-flex;
+        padding: 10px;
+    }
+    
+    
+    .Btn-Dropdown:hover{
+        font-family: "新丸ゴ DB";
+        background-color: #F38000;
+        color: #ffffff;
+    }
+    
+    .Btn-Dropdown:focus{
+        font-family: "新丸ゴ DB";
+        background-color: #F38000;
+        color: #ffffff;
+    }
+    
+    
+    
+    .Btn-Dropdown:after{
+        content: url(https://pup.box.com/shared/static/nanfqmveja6lampicxww7gqm98opzr88.svg);
+        display: block;
+        position: absolute;
+        width: 45px !important;
+        height: 45px !important;
+        transition: .2s;
+        transition: ease-in-out;
+        left: 85%;
+    }
+    
+    .Btn-Dropdown:not(.collapsed){
+        font-family: "新丸ゴ DB";
+        background-color: #383537;
+        color: #ffffff;
+    }
+    
+    
+    
+    
+    .Btn-Dropdown:not(.collapsed):after{
+        content: url(https://pup.box.com/shared/static/g3byjy8gx1z0foboo0uk0ev3114vd862.svg);
+        transition: ease-in-out;
+    }
+    
+    
+    
+    @media screen and (max-width: 1280px){
+        .Btn-Dropdown{
+             font-size: 31px;         
+         }
+         .Btn-Dropdown:after{
+            width: 31px !important;
+            height: 31px !important;
+            left: 85%;}
+    
+            .Btn-Dropdown-2{
+                font-size: 20px;
+            }
+         
+     }
+    
+     @media screen and (max-width: 960px){
+        .Btn-Dropdown{
+             font-size: 28px;}
+    
+         .Btn-Dropdown:after{
+            width: 28px !important;
+            height: 28px !important;
+            left: 85%;}
+    
+            
+         
+            
+     }
+    
+    
+    @media (max-width: 426px) {
+    .Btn-Dropdown{
+        font-size: 4vw;
+    
+    }
+    
+    .Btn-Dropdown:after{
+        width: 20px !important;
+        height: 20px !important;
+        left: 85%;
+    }
+    
+    
+    
+    }
+
+
+
+        /* FAQ Accordion CSS------------------------------------------------------------------------------------------------------------------*/        
+.accordion-header{
+    border: 1px, #44413b;
+    font-size: 20px;
+    border-radius: 0px;
+}
+
+@media (max-width:767px){
+    .accordion-header{
+        font-size: 4.0vw;
+    }
+
+}
+
+.accordion-collapse{
+    border-radius: 0;
+    border-color: #F38000;
+}
+
+.accordion-button{
+    background-color: #F0E5D7;
+    color: #44413b;
+    font-size: 25px;
+    border-width: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    outline-style: solid; 
+    outline-width: 1px;
+    outline-color: #F38000;
+    border-radius: 0px;
+    border-color: #F38000;
+}
+
+
+.accordion-item{
+    border: 1px solid;
+    border-radius: 0px;
+}
+
+.accordion-button{
+    color: inherit;
+    font-size: inherit;
+    background: #F0E5D7;
+    padding-left: 10px;
+    outline-style: solid; 
+    outline-width: 1px;
+    outline-color: #F38000;;
+    border-radius: 0px;
+    border-color: #F38000;
+}
+
+.accordion-button:focus{
+
+    outline: 0;
+    
+}
+
+
+.accordion-button:not(.collapsed){
+    background: #F0E5D7;
+    color: inherit;
+    border-radius: 0px;
+    border-color: #F38000;
+}
+
+.accordion-button:after{
+    display: none;
+    border-radius: 0px;
+    border-color: #F38000;
+}
+
+
+
+
+.accordion-button::before{
+    content: url(https://pup.box.com/shared/static/7wpz9tk7srds9p6a7vv3g07wruics1fh.svg);
+    width: 50px !important;
+    height: 50px !important;
+    transition: .2s;
+    margin-left: 10px;
+    margin-right: 10px;
+	position: absolute;
+    transform: translate(-25%px, -50%);
+
+    
+}@media (max-width:767px){
+    .accordion-button::before{
+        content: url(https://pup.box.com/shared/static/7wpz9tk7srds9p6a7vv3g07wruics1fh.svg);
+        width: 30px !important;
+        height: 30px !important;
+        transition: .2s;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-top: auto;
+        padding-bottom: auto;
+        position: absolute;
+        transform: translate(-20%px, -50%);
+    
+    }}
+
+.accordion-button:not(.collapsed):before{
+    content: url(https://pup.box.com/shared/static/7wpz9tk7srds9p6a7vv3g07wruics1fh.svg);
+    rotate: 45deg;
+    transition: .2s;
+}
+
+.Acordion-Button-Padding{
+    padding-left: 80px;
+}
+@media (max-width:767px){.Acordion-Button-Padding{
+    padding-left: 50px;
+}}
+
+.accordion-body{
+    outline-style: solid; 
+    outline-width: 1px;
+    outline-color: #F38000;
+    border-radius: 0;
+    border-color: #F38000;
+}
+
+
+
+@media (max-width: 426px) {
+    .ContainerWidth{
+       max-width: 90%;
+    }
+    }
+
+.CardContainerFormat{
+    display: table;
+    width: 100%;
+}
+
+.CardFormat{
+    display: table-cell;
+}
+
+
+.box{
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E68000;
+    border-radius: 35px 35px 35px 35px;
+    
+}
+
+
+
+
+
+
+@media (max-width: 426px) {
+    .box{
+        width: 100%;
+        height: 100%;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        background-color: #E68000;
+        border-radius: 15px 15px 15px 15px;
+        
+    }
+    }
+
+
+
+
+
+    .section-cover-bottom{
+        width:100%;
+        height:100%;
+        z-index:1;
+        background-color: rgba(0,0,0,0.8);
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+      }
+      
+      .kids-footer {
+        padding: 0;
+        margin: 0;
+      }
+      .kids-footer li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: inline-block;
+      }
+      .kids-footer li a {
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+      }
+      .kids-footer li a:hover, .kids-footer li a:active, .kids-footer li a:focus {
+        outline: none;
+        text-decoration: none;
+      }
+      .kids-footer li a i {
+        font-size: 15px;
+      }
+      
+      #kids-footer {
+        background: #323a45;
+        color: #FFF;
+        position: relative;
+        font-family: '新丸ゴ DB', Arial, sans-serif;
+        background: url("../images/new2020/FOOTER_image.jpg");
+        background-size: cover;
+        background-position: center -600px;
+        height: auto;
+        padding:5em 0;
+      }
+      
+      #kids-footer .footer-box{
+        display: block;
+        width:80%;
+        z-index:999;
+        position: relative;
+        text-align: center;
+        margin:50px auto 2em;
+        border: 1px solid #FFF;
+      }
+      #kids-footer .footer-box h2{
+        color:#FFF;
+        padding: 1em 0;
+        font-size: 1.2em;
+        border-bottom: 1px solid #FFF;
+      }
+      
+      #kids-footer .footer-box p{
+        font-size: 0.8em;
+        margin:0;
+      }
+      
+      #kids-footer .footer-box p.phone{
+        font-size: 2em;
+        letter-spacing: -0.5px;
+        font-family: "新丸ゴ DB", arial, sans-serif;
+        font-weight: bold;
+      }
+      
+      #kids-footer ul.footer-link-list{
+        z-index:99;
+        position: relative;
+        margin-left:10%;
+      }
+      
+      #kids-footer ul.footer-link-list li{
+        font-size:0.8em;
+        font-family: arial, sans-serif;
+      }
+      
+      
+      
+      
+      #kids-footer .kids-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 8;
+        background: #3b3d40;
+        opacity: .5;
+      }
+      #kids-footer .kids-footer-content {
+        position: relative;
+        z-index: 9;
+      }
+      #kids-footer p {
+        display: block;
+        color: #fff;
+        font-weight: normal;
+        line-height: 2.0em;
+        font-size: 1em;
+        letter-spacing: 2px;
+      }
+      
+      #kids-footer .kids-lead {
+        font-size: 13px;
+        font-family: "新丸ゴ DB", arial, sans-serif;
+        letter-spacing: 4px;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      #kids-footer a {
+        color: #fff;
+      }
+      #kids-footer a:hover, #kids-footer a:active, #kids-footer a:focus {
+        color: #ef8200;
+      }
+      #kids-footer .kids-footer-logo {
+        display: block;
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      #kids-footer .kids-footer-logo a {
+        font-family: "新丸ゴ DB", arial, sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #ccc;
+        border: 2px solid #9a9fa5;
+        float: left;
+        padding: 7px 10px 7px 12px;
+      }
+      #kids-footer .kids-footer-logo a:hover, #kids-footer .kids-footer-logo a:active, #kids-footer .kids-footer-logo a:focus {
+        color: #fff;
+        border-color: #fff;
+        text-decoration: none;
+      }
+      #kids-footer ul {
+        padding: 0;
+        margin: 0;
+      }
+      #kids-footer ul li {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 14px 0;
+        line-height: 16px;
+      }
+      #kids-footer .kids-footer-copyright {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        bottom: 20px;
+      }
+      #kids-footer .kids-footer-copyright small {
+        color: #FFF;
+        font-size: 0.5em;
+      }
+      
+      @media screen and (max-width: 480px) {
+        #kids-footer .kids-footer-copyright small {
+          font-size: 0.1em;
+        }
+      }
+
+      
+      
+
+
+      .btn-new {
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+        padding:0;
+        margin:0;
+        border: none;
+        /* UI Properties */
+        background: transparent linear-gradient(90deg, #D45D69 0%, #E1A871 100%) 0% 0% no-repeat padding-box;
+        border-radius: 45px;
+        opacity: 1;
+        color:#FFF;
+        font-size: 1em;
+        }
+        
+        @media screen and (max-width: 768px) {
+          .btn-new {
+          width: 80%;
+          }
+        }
+
+
+
+
+
+    

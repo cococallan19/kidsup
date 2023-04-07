@@ -1,0 +1,698 @@
+    /* CUSTOM-NAVBAR ------------------------------------------------------------------*/
+
+Nav {
+    background-color: #F3BE38;
+}
+
+.nav-link{
+    color : #582B17;
+}
+
+
+.nav-link:hover{
+    color : #fff;
+}
+
+.NavBtn {
+    color : #582B17;		
+}
+
+.NavBtn:hover{
+    color: #fff;
+    background-color: #582B17;
+}
+
+.NavLogo:hover{
+    transition-duration: 0.2s;
+    filter: drop-shadow(3px 3px 0px #582B17);
+}
+
+
+    /* BANNER TWEAKS ------------------------------------------------------------------*/
+.BannerContainer{
+    padding-left: 7%;
+}
+
+@media (max-width: 426px) {
+    .BannerContainer{
+       padding-left: 2%;
+       padding-right: 2%;
+    }
+}
+
+
+.TestimonialCard{
+    border-radius: 20px;
+    filter: drop-shadow(3px 3px 5px #9FAD36);
+    background-color: #fbf9f7;
+    outline: none;
+    border: none;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+.TestemonialBody{
+    outline: none;
+    border: none;
+    padding-top: 25%;
+    padding-left: 15px;
+    padding-right: 15%;
+    padding-bottom: 35%;
+    
+}
+@media (max-width: 769px) {
+    .TestemonialBody{
+
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+}
+
+
+.TestimonialVector{
+    transform: translate(-50%, -100%);
+    position: absolute;
+    width: 30%;
+    left: 80%;
+    vertical-align: bottom;
+    top: 100%;
+}
+
+
+
+
+
+.FourPointsBoxes{
+    position: relative;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-bottom: none;
+    
+}
+
+.FourPointsIcons{
+    position: relative;
+    width: 100%;
+    
+}
+
+@media (max-width: 426px) {
+    .FourPointsIcons{
+        transform: translate(-50%, 0%);
+        position: relative;
+        width: 70%;
+        left: 50%;
+        padding-bottom: 20px;
+    }
+    .FourPointsBoxes{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+
+
+
+.KidBreakpointScale{
+    width: 660px;
+    left: 66%;
+}
+
+.KidBreakpointPadding{
+    padding-top: 350px;
+}
+
+@media (max-width: 1200px) {
+    .KidBreakpointScale{
+        width: 570px;
+    }
+    .KidBreakpointPadding{
+        padding-top: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .KidBreakpointScale{
+        width: 480px;
+    }
+    .KidBreakpointPadding{
+        padding-top: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .KidBreakpointScale{
+        width: 360px;
+    }
+    .KidBreakpointPadding{
+        padding-top: 200px;
+    }
+}
+
+.ActivityBackground{
+    background-image: 
+    repeating-linear-gradient(
+      90deg,
+      #83CCE4,
+      #83CCE4 15px,
+      #99D8EA 15px,
+      #99D8EA 30px /* determines size */
+    );
+}
+
+/* CAROUSEL - ACTIVITIES ------------------------------------ */
+
+
+.CardPadding{
+    padding-right:20px; 
+    padding-bottom: 25px;
+    padding-left: -20px;
+    padding-top: 10px;
+}
+
+.ActivityCard{
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px -10px rgba(0, 0, 0, 0.15);
+    background-color: #f9fbfd;
+    outline: none;
+    border: none;
+    position: relative;
+    display: block;
+    height: 100%;
+    margin-left: 7.5%;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.ActivityImage{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.ActivityBody{
+    outline: none;
+    border: none;
+    background-color: #f9fbfd;
+
+
+
+    
+}
+
+.ActivityBadge{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    top: 15%;
+    
+}
+
+.ActivityDate{
+    font-family: "新丸ゴ U";
+    font-size: 40px;
+    color: #fff;
+    background-color: #AF2796;
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    left: 100%;
+    transform: translate(-100%, 0%);
+    border-radius: 0px 20px 00px 20px;
+}
+
+.ActivityName{
+    font-family: "新丸ゴ DB";
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 1280px){
+    .ActivityDate{
+         font-size: 30px;
+        }
+
+        .ActivityName{
+
+            font-size: 28px;
+
+        }
+
+
+
+         
+}
+
+@media screen and (max-width: 960px){
+    .ActivityDate{
+         font-size: 20px;
+ }
+
+ 
+ .ActivityName{
+
+    font-size: 18px;
+
+}
+}
+
+@media (max-width: 426px) {
+
+    .ActivityCard{
+        padding-bottom: 20px;
+    }
+
+
+    .ActivityDate{
+        font-size: 35px;}
+
+
+.ActivityName{
+
+   font-size: 20px;
+}
+}
+
+
+        .Btn-Regular{
+            background :  #E85A9B;
+            text-decoration: none;
+            transition-duration: 0.4s;
+            font-family : "新丸ゴ DB";
+            color : #FAF5F0;		
+            text-align: center;
+            font-size: 30px;
+            padding-top: 2rem; 
+            padding-bottom: 2rem; 
+            border-radius : 4rem;
+            margin-right: auto;
+            margin-right: auto;
+            width: 75%;
+            text-align: center;
+        }
+
+        .Btn-Online{
+            background :  #FBB900;
+
+        }
+
+
+        @media screen and (max-width: 1200px){
+            .Btn-Regular {
+                font-size: 20px;
+                padding-top: 2vw; 
+                padding-bottom: 2vw; 
+                border-radius : 4vw;
+                width: 75%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+         }
+    
+         @media screen and (max-width: 992px){
+            .Btn-Regular {
+                font-size: 16px;
+                padding-top: 2vw; 
+                padding-bottom: 2vw; 
+                border-radius : 4vw;
+                width: 75%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+         }
+        
+        
+        @media (max-width: 425px) {
+            .Btn-Regular{
+            font-size: 18px;
+            width: 90%;
+    
+        }
+        }
+        
+        .Btn-Regular:hover{
+            background : #36245A;
+            text-decoration: none;
+            color : #f6ede0;	
+        
+    }
+
+
+    .Btn-Regular-2{
+        background :  #E85A9B;
+        text-decoration: none;
+        transition-duration: 0.4s;
+        font-family : "新丸ゴ DB";
+        color : #FAF5F0;		
+        text-align: center;
+        font-size: 30px;
+        padding-top: 2rem; 
+        padding-bottom: 2rem; 
+        border-radius : 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+
+    }
+
+
+
+    @media screen and (max-width: 1280px){
+        .Btn-Regular-2 {
+            font-size: 20px;
+            padding-top: 2vw; 
+            padding-bottom: 2vw; 
+            border-radius : 6vw;
+            width: 75%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+     }
+
+     @media screen and (max-width: 992px){
+        .Btn-Regular-2 {
+            font-size: 20px;
+            padding-top: 2vw; 
+            padding-bottom: 2vw; 
+            border-radius : 6vw;
+            width: 75%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+     }
+    
+    
+    @media (max-width: 425px) {
+        .Btn-Regular-2{
+            font-size: 18px;
+            width: 90%;
+
+    }
+    }
+    
+    .Btn-Regular-2:hover{
+        background : #36245A;
+        text-decoration: none;
+        color : #f6ede0;	
+    
+}
+
+.Btn-Regular-3{
+    background :  #36245A;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    font-family : "新丸ゴ DB";
+    color : #FAF5F0;		
+    text-align: center;
+    font-size: 30px;
+    padding-top: 2rem; 
+    padding-bottom: 2rem; 
+    border-radius : 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+@media screen and (max-width: 1280px){
+    .Btn-Regular-3 {
+        font-size: 20px;
+        padding-top: 2vw; 
+        padding-bottom: 2vw; 
+        border-radius : 4vw;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ }
+
+ @media screen and (max-width: 992px){
+    .Btn-Regular-3 {
+        font-size: 20px;
+        padding-top: 2vw; 
+        padding-bottom: 2vw; 
+        border-radius : 4vw;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ }
+
+
+@media (max-width: 426px) {
+    .Btn-Regular-3{
+    font-size: 20px;
+    width: 90%;
+
+}
+}
+
+.Btn-Regular-3:hover{
+    background : #f6ede0;
+    text-decoration: none;
+    color : #36245A;	
+
+}
+
+.Btn-Hover:hover{
+    background: #F3BE38;
+}
+
+.Ale-DanielBreakpointScale{
+    width: 1350px;
+}
+
+.Ale-DanielBreakpointPadding{
+    padding-top: 400px;
+}
+
+@media (max-width: 1200px) {
+    .Ale-DanielBreakpointScale{
+        width: 1200px;
+    }
+    .Ale-DanielBreakpointPadding{
+        padding-top: 365px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Ale-DanielBreakpointScale{
+        width: 992x;
+    }
+    .Ale-DanielBreakpointPadding{
+        padding-top: 290px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Ale-DanielBreakpointScale{
+        width: 768px;
+    }
+    .Ale-DanielBreakpointPadding{
+        padding-top: 227px;
+    }
+}
+@media (max-width: 426px) {
+    .Ale-DanielBreakpointPadding{
+       padding-top: 150px;
+    }
+}
+
+
+.SalesPoint{
+    background-color: #FAF5F0;
+    border-radius: 25px;
+    display: table-cell;
+    
+
+  }
+
+  .SalesPointText{
+    padding-top: 20%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 7%;
+    display: block;
+
+  }
+
+    .OnlinePitch{
+       text-align: left;
+    }
+
+  @media (max-width: 426px) {
+    .OnlinePitch{
+       text-align: left;
+    }
+}
+
+.MainPitchContainer{
+    border-radius: 75px;
+    background-color: #E85A9B;
+}
+
+@media (max-width: 426px) {
+    .MainPitchContainer{
+        border-radius: 0px;
+        background: rgb(232,90,155);
+        background: linear-gradient(180deg, rgba(232,90,155,1) 90%, rgba(54,36,90,1) 90%);
+    }
+    .SalesPoint{
+        font-size: 15.1px;
+        margin-bottom: 85px;
+        display: block;
+
+        
+    }
+    .SalesPointMobileText{
+        font-size: 15.5px;
+
+    }
+
+    .SalesPointText{
+        padding-top: 20%;
+        padding-left: 4%;
+        padding-right: 4%;
+
+        display: block;
+    }
+}
+.InfoContainer{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+@media (max-width: 426px) {
+    .InfoContainer{
+        padding-left: 5%;
+        padding-right: 5%;
+        }
+    .ActivityHeader{
+        text-align: center;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .circle{
+  
+       width: 50px;
+        text-align: left;
+        letter-spacing : -0.5px;
+    }
+
+  
+
+
+    
+    @media (max-width: 1200px) {
+      
+    
+        .circle{
+            width: 35px;
+             }
+       
+         }
+    
+    
+    @media (max-width: 992px) {
+      
+
+        .circle{
+            width: 30px;
+         }
+
+  
+    }
+    
+
+
+
+    @media (max-width: 769px) {
+     
+        .circle{
+            width: 20px;
+         }
+
+
+    }
+
+    
+    @media screen and (max-width: 577px){
+      
+        .circle{
+            width: 30px;
+         }
+
+     }
+    
+     .carousel .carousel-indicators button {
+        width: 10px;
+       height: 10px;
+       border-radius: 100%;
+    }
+    
+#BottomCarouselIndicators .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 66vh;
+    overflow: hidden;
+
+}
+
+    
+@media (max-width: 1200px) {
+      
+    
+    #BottomCarouselIndicators .carousel-item img {
+        object-fit: cover;
+        object-position: center;
+        height: 50vh;
+        overflow: hidden;
+    
+    }
+     }
+
+     
+     @media (max-width: 426px) {
+        #BottomCarouselIndicators .carousel-item img {
+            object-fit: cover;
+            object-position: center;
+            height: 33vh;
+            overflow: hidden;
+        }
+        }
+    
+    
+    
+    
+    
+    
+    
